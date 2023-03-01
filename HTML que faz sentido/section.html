@@ -1,0 +1,36 @@
+<!--
+A tag section serve para colocarmos seções na nossa página HTML, e uma dica de ouro: Geralmente se coloca um título e conteúdo na tag section. Antigamente usava-se uma div para fazer essas divisões e seções de conteúdos, mas semanticamente é mais apropriado usar uma tag section. 
+
+A tag section pode ser usada dentro de um article, e não possui atributos específicos, somente os globais.
+
+Exemplo de uso a seguir:
+-->
+
+<main>
+  <h1>Receita 1</h1>
+  <p>descrição da receita</p>
+
+  <section>
+    <!-- Section - Somente se utiliza 1 vez por page-->
+    <h2>Modo de preparo</h2>
+    <p>Modo de preparo</p>
+  </section>
+  <!-- Senão utilizar o article-->
+  <article>
+    <h1>Receita 2</h1>
+    <p>descrição da receita</p>
+
+    <section>
+      <!-- Section - Agora pode ser repetida várias vezes-->
+      <h2>Modo de preparo</h2>
+      <p>Modo de preparo</p>
+    </section>
+    <h1>Receita 3</h1>
+    <p>descrição da receita</p>
+
+    <section>
+      <h2>Modo de preparo</h2>
+      <p>Modo de preparo</p>
+    </section>
+  </article>
+</main>
