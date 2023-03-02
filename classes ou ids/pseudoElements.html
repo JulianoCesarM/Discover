@@ -1,0 +1,24 @@
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+
+<style>
+  li::before {
+    content: "> ";
+  }
+</style>
+<!--
+::before adiciona um pseudo-elemento antes do elemento selecionado.
+::after adiciona um pseudo-elemento depois do elemento selecionado. 
+li::after{content: ";" } Tanto para o ::before quanto para o ::after é preciso adicionar o content, mesmo que ele seja vazio content = ""; 
+
+::first-line pega a primeira linha de um texto. 
+-->
+<style>
+  p::first-line {
+    font-weight: bold;
+  }
+</style>

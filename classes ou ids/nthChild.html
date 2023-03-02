@@ -1,0 +1,34 @@
+<!--
+:nth-child() É quando queremos selecionar o primeiro filho de um grupo de
+elementos.
+-->
+<ul>
+  <h3>Palavras bonitas</h3>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+<style>
+  ul li:nth-child(2) {
+    font-weight: bold;
+  }
+</style>
+
+<!--
+  nth-child odd e even
+
+  even - números pares
+  odd - números ímpares
+-->
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+
+<style>
+  ul li:nth-child(odd) {
+    color: gray;
+  }
+</style>
