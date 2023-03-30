@@ -1,0 +1,159 @@
+<!-- Largura e altura com flex basis -->
+<div class="box">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+  <div class="item">D</div>
+</div>
+<style>
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed red;
+  }
+  .box div {
+    border: 1px solid;
+    text-align: center;
+    height: 50px;
+    flex-basis: 50px;
+  }
+  .box div:nth-child(1) {
+    width: 350px;
+  }
+</style>
+*/
+<!-- Crescimento e adaptação dos itens-->
+<div class="box1">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+  <div class="item">D</div>
+</div>
+<style>
+  .box1 {
+    display: flex;
+    /* Para fazer em coluna, somente adicione o flex direction e aumente o height*/
+    border: 1px dashed red;
+  }
+  .box1 div {
+    border: 1px solid;
+  }
+  .box1 div:nth-child(2),
+  .box1 div:nth-child(3) {
+    flex-grow: 1;
+  }
+  .box1 div:nth-child(1) {
+    flex-grow: 2;
+  }
+</style>
+*/
+<div class="box2">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+  <div class="item">D</div>
+</div>
+<style>
+  .box2 {
+    display: flex;
+    border: 1px dashed red;
+    width: 160px;
+  }
+  /*Para mecher em coluna só adicionar flex-direction e adicionar o height*/
+  .box2 div {
+    flex-basis: 40px;
+    border: 1px solid;
+  }
+  .box2 div:nth-child(3),
+  .box2 div:nth-child(2) {
+    flex-shrink: 2;
+  }
+</style>
+*/
+<div class="box3">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+  <div class="item">D</div>
+</div>
+<style>
+  .box3 {
+    display: flex;
+    border: 1px dashed red;
+  }
+
+  .box3 div {
+    border: 1px solid;
+    flex: 1 1 40px;
+  }
+</style>
+*/
+<div class="page">
+  <aside>Aside</aside>
+  <main>
+    Main
+    <section>Content 1</section>
+    <section>Content 2</section>
+    <section>Content 3</section>
+  </main>
+</div>
+<style>
+  .page {
+    border: 2px solid;
+    min-height: 100vh;
+    display: flex;
+  }
+  aside {
+    background-color: lightgreen;
+    flex: 1;
+  }
+  main {
+    background-color: rgb(110, 192, 219);
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  /* basis é superior ao grow e shrink*/
+  section:nth-child(1) {
+    background-color: antiquewhite;
+    flex: 0 0 100px;
+  }
+  section:nth-child(2) {
+    background-color: lightcoral;
+    flex: 0 120px;
+  }
+  section:nth-child(3) {
+    background-color: lightpink;
+    flex: 1;
+  }
+</style>
+*/
+<div class="box4">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+  <div class="item">D</div>
+</div>
+<style>
+  .box4 {
+    display: flex;
+    height: 50vh;
+    border: 1px dashed red;
+  }
+
+  .box4 div {
+    border: 1px solid;
+  }
+  .box4 div:nth-child(1) {
+    order: 1;
+  }
+  .box4 div:nth-child(2) {
+    order: 20;
+  }
+  .box4 div:nth-child(3) {
+    order: 0;
+  }
+  .box4 div:nth-child(4) {
+    order: -1;
+  }
+</style>

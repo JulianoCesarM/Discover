@@ -1,0 +1,129 @@
+<!-- Desafio 1 - Menu de navegação-->
+<header>
+  <a href="">Logo</a>
+  <div class="menu">
+    <div class="item">Home</div>
+    <div class="item">About</div>
+    <div class="item">Services</div>
+    <div class="item">Testimonials</div>
+    <button>Contact</button>
+  </div>
+</header>
+<style>
+  header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu div,
+  button {
+    display: flex;
+    float: left;
+    padding: 0.3rem 0.8rem;
+  }
+  .menu button {
+    background-color: rgb(39, 23, 112);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+  }
+</style>
+<!-- Desafio 2 - Layout 2 colunas-->
+<br /><br />
+<div class="page">
+  <div class="column1">Coluna esquerda</div>
+  <div class="column2">Coluna Direita</div>
+</div>
+<style>
+  .page {
+    border: 1px dashed red;
+    display: flex;
+    height: 150px;
+    gap: 1rem;
+  }
+  .column1 {
+    background-color: yellow;
+    flex: 1;
+  }
+  .column2 {
+    background-color: blue;
+    flex: 3;
+  }
+</style>
+<br /><br />
+<!-- Desafio 3 - 9 fotos 3 colunas-->
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>
+</div>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    height: 500px;
+  }
+  .item {
+    border: 1px dashed pink;
+    width: 30%;
+    height: auto;
+  }
+</style>
+<br /><br />
+<!-- Desafio 4 - imagem dentro de um botao -->
+<div class="box">
+  <button>
+    <img
+      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBkPSJNNDA1LjIsMjMyLjlMMTI2LjgsNjcuMmMtMy40LTItNi45LTMuMi0xMC45LTMuMmMtMTAuOSwwLTE5LjgsOS0xOS44LDIwSDk2djM0NGgwLjFjMCwxMSw4LjksMjAsMTkuOCwyMCAgYzQuMSwwLDcuNS0xLjQsMTEuMi0zLjRsMjc4LjEtMTY1LjVjNi42LTUuNSwxMC44LTEzLjgsMTAuOC0yMy4xQzQxNiwyNDYuNyw0MTEuOCwyMzguNSw0MDUuMiwyMzIuOXoiLz48L3N2Zz4="
+      alt="sada"
+    />
+    Play
+  </button>
+</div>
+<style>
+  button {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    gap: 0.4rem;
+  }
+  button img {
+    width: 2rem;
+  }
+</style>
+<br /><br /><br /><br />
+<!-- Desafio 5 - Footer -->
+<footer>2021</footer>
+
+<style>
+  footer {
+    margin-top: auto;
+
+    background-color: aliceblue;
+    color: black;
+
+    height: 8rem;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

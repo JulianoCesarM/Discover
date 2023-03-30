@@ -1,0 +1,36 @@
+<!--Table-->
+<table>
+  <tr>
+    <td>Hora</td>
+    <td>20:00</td>
+  </tr>
+  <tr>
+    <td>Hora</td>
+    <td>20:30</td>
+  </tr>
+  <tr>
+    <td>Hora</td>
+    <td>10:00</td>
+  </tr>
+</table>
+
+<!--Tableless-->
+<div style="float: left">esquerda</div>
+<div style="float: right">direita</div>
+<div style="clear: both">flow normal</div>
+
+<!--Flexbox-->
+<style>
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .item:nth-child(1) {
+    order: 1;
+  }
+</style>
+<div class="flexbox">
+  <div class="item">A</div>
+  <div class="item">B</div>
+  <div class="item">C</div>
+</div>
