@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Meu blog</h1>
+
+    <h2>Meu blog</h2>
+
+    <h3>Meu blog</h3>
+
+    <input type="text" value="Estou no elemento" />
+
+    <header class="bg"><h5>Meu blog</h5></header>
+  </body>
+  <script>
+    /*Acrescentando texto com javaScript */
+    const element = document.querySelector("h1")
+    element.textContent += ", Olá devs!"
+    console.log(element.textContent)
+
+    /*Alterando texto com javaScript */
+    const element2 = document.querySelector("h2")
+    element2.innerText = "Olá devs!"
+    console.log(element2.innerText)
+
+    /*É possivel incluir tags html pelo javaScript utilizando o innerHTML */
+    const element3 = document.querySelector("h3")
+    element3.innerHTML = "Olá devs! <small>!!!</small>"
+    console.log(element3.innerText)
+
+    /*Alterando valor com javaScript */
+    const element4 = document.querySelector("input")
+    console.log(element4.value)
+    element4.value = "Valor que eu quiser"
+
+    /* Atribuindo atributo */
+    const header = document.querySelector("header")
+    header.setAttribute("id", "header")
+    /* Pegando atributo */
+    const headerID = document.querySelector("#header")
+    console.log(headerID.getAttribute("id"))
+    /* Removendo atributo */
+    header.removeAttribute("id")
+    header.removeAttribute("class")
+  </script>
+</html>

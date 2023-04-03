@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meu blog</h1>
+    </header>
+    <script>
+      const body = document.querySelector("h1")
+      console.log(body.parentElement)
+      console.log(body.parentNode)
+
+      /* Seleciona todos os filhos do nó pai*/
+      const el = document.querySelector("body")
+      console.log(el.childNodes)
+
+      /* Cria uma coleção Html*/
+      console.log(el.children)
+
+      /* Leva em consideração o espaço vazio */
+      console.log(el.firstChild)
+
+      /* Seleciona o primeiro elemento*/
+      console.log(el.firstElementChild)
+
+      /* Seleciona o ultimo elemento*/
+      console.log(el.lastElementChild)
+
+      const eel = document.querySelector("header")
+      /* Seleciona o proximo elemento mas levando em consideração o espaço vazio*/
+      console.log(eel.nextSibling)
+
+      /* Seleciona o ultimo elemento*/
+      console.log(eel.nextElementSibling)
+
+      const eeel = document.querySelector("body script")
+
+      /* Se atentar a construção do site */
+      /* Seleciona o elemento anterior mas levando em consideração o espaço vazio*/
+      console.log(eeel.previousSibling)
+
+      /* Seleciona o elemento anterior*/
+      console.log(eeel.previousElementSibling)
+    </script>
+  </body>
+</html>
