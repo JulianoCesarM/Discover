@@ -1,3 +1,18 @@
 Primeiro arquivo com GIT BASH
 Primeira modificação
 added line
+
+#Comandos básicos do GIT
+
+git add : Prepara arquivos para a parte de stages.
+git commit -m : Cria uma mensagem e um ponto na história da modificação.
+git rm : remove o arquivo.
+git restore : Restaura o arquivo para o que era antes da modificação.
+git commit --amend -m : Edita o ultimo commit.
+git status : O GIT checa se tem alguma alteração do arquivo do local para o do repositório.
+git diff : mostra detalhadamente quais foram as alterações nos arquivos.
+git mv : renomeia o arquivo ou usado tambem para movelo para outro local.
+git init : inicia um novo repositório.
+git clone : Clona um repositório para a máquina local.
+git pull : Faz uma checagem para ver se tem alguma diferença nos arquivos do repositório da nuvem para a máquina local.
+git push : Envia alterações feitas da máquina local para o repositório na nuvem.
