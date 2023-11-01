@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +13,16 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="profile">
-        <img src="./assets/img/Avatar.png" alt="Foto do perfil" />
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/img/avatar.png" alt="Foto do perfil" />
         <p>@JulianoCM</p>
       </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
       <ul>
         <li><a href="/" target="_blank">Veja meu portfólio</a></li>
         <li><a href="/" target="_blank">Alguma coisa</a></li>
@@ -25,12 +30,16 @@
         <li><a href="/" target="_blank">Alguma coisa</a></li>
         <li><a href="/" target="_blank">Alguma coisa</a></li>
       </ul>
-      <div class="social-links">
+      <div id="social-links">
         <a href="#"> <ion-icon name="logo-github"></ion-icon></a>
         <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
         <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
         <a href="#"> <ion-icon name="logo-youtube"></ion-icon></a>
       </div>
+      <footer>
+        Feito com <ion-icon name="heart"></ion-icon> pelo
+        <a href="linkedin">Juliano C. Magoga</a>
+      </footer>
     </div>
     <script
       type="module"
@@ -40,5 +49,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
